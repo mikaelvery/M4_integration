@@ -1,0 +1,62 @@
+
+    .box {
+      background-color:rgb(255, 124, 124);
+    }
+    .box:first-child {
+      color: rgb(255, 255, 255);
+    }
+    #list {
+      background-color:rgb(144, 203, 255) ;
+    }
+    #list:last-child {
+      color: rgb(255, 255, 255);
+    }
+    body > p {
+      background-color: aquamarine;
+    }
+    a[href*="https"] {
+      background-color: rgb(119, 255, 128);
+    }
+    a[href$=".com"] {
+      color: rgb(110, 110, 110);
+    }
+    a[href*="example"] {
+      font-style: italic;
+    }
+    table td {
+      background-color: rgb(129, 255, 104);
+    }
+    table tr td:first-child {
+      color:rgb(230, 0, 0)
+    }
+    table .tr + .td {
+      color:rgb(0, 255, 247);
+    }
+    #container  {
+      margin-left: 50px;
+    }
+    .box {
+      font-style: italic;
+    }
+    #container:not(.box:first-child) {
+      color: rgb(0, 0, 0);
+    }
+    #container .box:nth-child(-n + 2) {
+      margin-left: 5px;
+    }
+    /* et ainsi de suite jusqua (-n +10) juqu'a la question 25 */
+    #container .box:nth-child(n + 5).box:nth-child(-n + 10) {
+      margin-left: 5px;
+    }
+    #container .box:nth-child(n + 6).box:nth-child(-n + 10) {
+      margin-right: 10px;
+    }
+    /* ainsi de suite jusqu'a dernier element question 29 */
+  #container .box:nth-child(-n + 1) {
+  background-color: rgb(255, 165, 242);
+  } 
+  #container :nth-child(n + 9):nth-child(-n + 10) {
+    background-color: rgb(255, 165, 242);
+  }
+
+  

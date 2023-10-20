@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html4</title>
+</head>
+<style>
+    * {
+        margin:0;
+        padding: 0;
+        }
+    body {
+        background-color: rgb(255, 255, 255);
+    }  
+    .page {
+        padding: 10px;
+        /* border: solid 1px black; */
+        display: grid;
+        grid-template-columns: 1fr 294px 254px 228px 1fr;
+        grid-row: 420px 282px 369px;
+        gap: 10px;
+    }
+    .page .div1 {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .page .div2 {
+        grid-column: 3;
+        grid-row: 1;
+    }
+    .page .div3 {
+        grid-column: 4;
+        grid-row: 1;
+    }
+    .page .div4 {
+        grid-column: 2 / 5;
+        grid-row: 2 ;
+    }
+    /* .page .div5 {
+        grid-column: 3 / 4;
+        grid-row: 2;
+    } */
+    .page .div6 {
+        grid-column: 2 / 4;
+        grid-row: 3;
+    }
+    body .prec {
+        font-size: 30px;
+        color: rgb(0, 0, 0);
+        float: left;
+    }
+    body .suivant {
+        font-size: 30px;
+        color: rgb(0, 0, 0);
+        float: right;
+    }
+</style>
+<body>     
+<section class="page"> 
+    <div class="div1">
+        <img src="page4/page04_img01_294x134.jpg">
+        <img src="page4/page04_img02_294x301.jpg">        
+    </div>
+    <div class="div2">     
+        <img src="page4/page04_img03_254x410.jpg">
+    </div>  
+    <div class="div3">
+        <img src="page4/page04_img04_228x410.jpg">
+    </div>
+    <div class="div4">
+        <img src="page4/page04_img05_294x282.jpg">
+    </div>    
+    <!-- <div class="div5">
+        <img src="page4/page04_img06_494x323.jpg">
+    </div> -->
+    <div class="div6">
+        <img src="page4/page04_img07_800x369.jpg">
+    </div>    
+    </footer>                
+</section> 
+    <a href="/1_exo-design-comics/html1.html" class="prec"> Page précédente </a>
+    <a href="1_exo-design-comics/html3.html" class="suivant"> Page suivante </a> >
+</body>
+</html>

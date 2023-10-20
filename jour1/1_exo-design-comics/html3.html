@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html3</title>
+    </head>
+        <style>
+            * {
+                margin:0;
+                padding: 0;
+                }
+            body {
+                background-color: rgb(255, 255, 255);
+            }  
+            .page {
+                padding: 10px;
+                /* border: solid 1px black; */
+                display: grid;
+                grid-template-columns: 1fr 400px 400px 1fr;
+                grid-template-rows: 167px 245px 449px 225px;
+                gap: 10px;
+            }
+            .page .header {
+                grid-column: 2 / 4;
+                grid-row: 1;
+            }
+            .page .header2 {
+                grid-column: 2 / 4;
+                grid-row: 2;
+            }
+            .page .main {
+                grid-column: 2 / 4;
+                grid-row: 3 ;
+            }
+            .page .footer {
+                grid-column: 2 / 4;
+                grid-row: 4;
+            }
+            body .prec {
+                font-size: 30px;
+                color: rgb(0, 0, 0);
+                float: left;
+            }
+            body .suivant {
+                font-size: 30px;
+                color: rgb(0, 0, 0);
+                float: right;
+            }
+        </style>
+    <body>     
+        <section class="page"> 
+            <header class="header">
+                <img src="page3/page03_img01_800x167.jpg">
+            </header>
+            <header2 class="header2">
+                <img src="page3/page03_img02_800x245.jpg">
+            </header2>
+            <main class="main">
+                <img src="page3/page03_img03_216x449.jpg">
+                <img src="page3/page03_img04_208x449.jpg">
+                <img src="page3/page03_img05_352x449.jpg">
+            </main>
+            <footer class="footer">
+                <img src="page3/page03_img06_800x225.jpg">
+            </footer>                
+        </section> 
+            <a href="/1_exo-design-comics/html1.html" class="prec"> Page précédente </a>
+            <a href="1_exo-design-comics/html3.html" class="suivant"> Page suivante </a> >
+    </body>
+</html>  
